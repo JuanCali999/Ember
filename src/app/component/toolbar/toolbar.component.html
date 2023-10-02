@@ -1,0 +1,15 @@
+<p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{title}}</span>
+      <span class="example-spacer"></span>
+       
+      <a mat-button *ngFor="let option of options"
+         [routerLink]="option.path">{{ option.title }}</a>
+     
+    </mat-toolbar>
+    
+  </p>
+  
